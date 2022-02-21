@@ -1,0 +1,108 @@
+{% load static %}
+
+</html>
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Future Imperfect by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="{% static 'blog/assets/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/assets/css/post_detail.css' %}">
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>DATA IS THE NEW SOIL</h1>
+        </header>
+
+        <!-- Main -->
+        <!-- Sample of my blog article -->
+        <div id="main">
+
+            <!-- Post sample with link to main blog-->
+            <article class="post">
+
+                {% for post in post_list %}
+               
+                <h2 style="text-align: left;">{{ post.title }}</h2><br>
+                <a href="{% url 'post_detail' post.slug  %}" class="image featured"><img src="{{ post.img_post.url }}" alt="" /></a>
+                <p>{{ post.author }} | {{ post.created_on}} </p>
+                <p style="text-align: left;" class="card-text">{{post.content |safe | slice:":200"}}...</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                        </li>
+                    </ul>
+                </footer>
+                {% endfor %}            
+ 
+
+                {% block content %}
+                <!-- Content Goes here -->
+                {% endblock content %}
+                <!-- Footer -->
+            </article>
+
+        </div>
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+
+            <!-- Intro -->
+            <section id="intro">
+                <a href="#" class="logo"><img src="{% static 'blog/images/logo.jpg'%}" alt="image here" /></a>
+                <header>
+                    <h2>Welcome To The World Of Data</h2>
+                    <p>"Live as if you were to die tomorrow, learn as if you were to live forever" ~ Mahtma Gandhi</p>
+
+                    <br>
+                    <p>View my Portfolio</p>
+                    <a href="{% url 'portfolio' %}">Portfolio</a>
+
+                </header>
+            </section>
+
+
+            <!-- Footer -->
+            <!-- follow  -->
+            <section id="footer">
+                <p>Follow me for more insights and great Data science Projects</p>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+
+            </section>
+
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+
+
+    <script src="{% static 'blog/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/browser.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/util.js' %}"></script>
+    <script src="{% static 'blog/assets/js/main.js' %}"></script>
+
+
+</body>
+
+</html>
