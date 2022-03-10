@@ -40,8 +40,8 @@
                
                 <h2 style="text-align: left;">{{ post.title }}</h2><br>
                 <a href="{% url 'post_detail' post.slug  %}" class="image featured"><img src="{{ post.img_post.url }}" alt="" /></a>
-                <p>{{ post.author }} | {{ post.created_on}} </p>
-                <p style="text-align: left;" class="card-text">{{post.content |safe | slice:":200"}}...</p>
+                <p>{{ post.author }} / {{ post.created_on}} </p>
+                <p style="text-align: left;" class="card-text">{{post.content | safe | slice:":200"}}...</p>
                 <footer>
                     <ul class="actions">
                         <li><a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
