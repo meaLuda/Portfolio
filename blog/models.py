@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.conf import settings
 from tinymce.models import HTMLField
+
 
 STATUS = (
     (0,"Draft"),
@@ -11,7 +12,7 @@ STATUS = (
 class Post(models.Model):
     img_post = models.ImageField(upload_to='static/blog/images')
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(blank=True, unique=True)
     author = models.ForeignKey(User, on_delete= models.CASCADE,related_name='blog_posts')
     updated_on = models.DateTimeField(auto_now= True)
     # content = models.TextField()

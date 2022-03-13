@@ -1,0 +1,35 @@
+.blog-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.avatar-image{
+    border-radius: 60%;
+    /* max-width: 100%; */
+    height: auto;
+    border-radius: 120px 120px 120px;
+
+}
+
+tr:nth-of-type(odd){
+    background: #eee;
+
+}
+
+th{
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.home-body{
+  max-width: 1000px;
+  margin: auto;
+}
