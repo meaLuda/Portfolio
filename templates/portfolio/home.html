@@ -42,8 +42,10 @@
 			<h1 style="color:white; font-size:18px; font-family: 'Courier New', monospace;">
 				Hey! Im <strong id="cursor1">Munyala Eliud</strong>,</h1>
 			<p style="color:white; font-size:18px; font-family: 'Courier New', monospace;">
-				<br/>Data Scientist with skills in interpreting and analyzing data for driving business solutions, with knowledge in statistics,
-				mathematics, and analytics. Excellent understanding of business operations and analytics tools for effective analysis of data..
+				<br/>Insightful strategic leader and Data Engineer with interest in developing and implementing data driven solutions to
+				complex business problems.<br>With a focus on approaches such as MLOps that allows organizations to alleviate issues on
+				their path to AI with ROI by providing a technological backbone for managing Machine Learning life cycle through
+				automation and scalability and improving the customer experience.
 			</p>
 
 			<!--Adding footer -->
@@ -122,10 +124,10 @@
 
 						{% for post in post_list %}
 
-						<h2 style="text-align: left;">{{ post.title | upper }}</h2>
+						<h2 style="text-align: left;color: black;">{{ post.title | upper }}</h2>
 						<a href="{% url 'post_detail' post.slug  %}" ><img class="blog-image" src="{{ post.img_post.url }}" alt="" /></a>
-						<p>{{ post.author }} | {{ post.created_on}} </p>
-						<p style="text-align: left;">{{post.content|slice:":200"| safe }}...</p>
+						<h6 style="text-align: right;" >{{ post.author }} | {{ post.created_on}} </h6><br>
+						<h5 style="text-align:left;color: rgb(74, 73, 73);">{{post.content|slice:":200"|safe}}......</h5>
 
 						<footer>
 							<ul class="actions">
