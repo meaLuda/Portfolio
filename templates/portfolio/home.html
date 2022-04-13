@@ -125,7 +125,7 @@
 						<h2 style="text-align: left;">{{ post.title | upper }}</h2>
 						<a href="{% url 'post_detail' post.slug  %}" ><img class="blog-image" src="{{ post.img_post.url }}" alt="" /></a>
 						<p>{{ post.author }} | {{ post.created_on}} </p>
-						<p class="card-text" style="text-align: left;">{{post.content|slice:":200"| safe }}...</p>
+						<p style="text-align: left;">{{post.content|slice:":200"| safe }}...</p>
 
 						<footer>
 							<ul class="actions">
