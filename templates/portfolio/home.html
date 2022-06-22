@@ -3,257 +3,204 @@
 <!--loaded static files-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Munyala | Portfolio</title>
 
-    <!-- my links -->
-    <link rel="stylesheet" href="{% static 'portfolio/css/skel.css' %}" />
-    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-xlarge.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-large.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-medium.css' %}"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munyala | Portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-small.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-xsmall.css' %}"
-    />
-    <link
-      rel="stylesheet"
-      href="{% static 'portfolio/css/style-xlarge.css' %}"
-    />
+  <!-- my links -->
+  <link rel="stylesheet" href="{% static 'portfolio/css/skel.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-xlarge.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-large.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-medium.css' %}" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tachyons/css/tachyons.min.css"
-    />
-    <link rel="stylesheet" href="{% static 'portfolio/css/home.css' %}" />
-    <style></style>
-  </head>
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-small.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-xsmall.css' %}" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/style-xlarge.css' %}" />
 
-  <body style="text-align: center">
-    <!-- main holiding div -->
-    <div class="home-body">
-      <div class="wrapper">
-        <header id="header" style="text-align: center">
-          <a href="#" class="myavatar"
-            ><img
-              class="rounded mx-auto d-block"
-              src="{% static 'portfolio/images/avatar.png'%}"
-              alt="port img" width="800" 
-			  height="800"
-          /></a>
-          <br />
-          <br />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
+  <link rel="stylesheet" href="{% static 'portfolio/css/home.css' %}" />
+  <style>
+    .avatar {
+      vertical-align: middle;
+      width: 300px;
+      height: 300px;
+      border-radius: 2000%;
+    }
+  </style>
+</head>
 
-          <h1
-            style="
+<body style="text-align: center">
+  <!-- main holiding div -->
+  <div class="home-body">
+    <div class="wrapper">
+      <header id="header" style="text-align: center">
+        <a href="#" class="myavatar"></a>
+
+        <div style="background-size: cover; height: 480px; padding-top: 80px">
+          <img src="{% static 'portfolio/images/avatar.png'%}" alt="port img" class="avatar" />
+        </div>
+
+        <h1 style="color: white;font-size: 18px;font-family: 'Courier New', monospace;">Hey! Im <strong id="cursor1">Munyala Eliud</strong>,</h1>
+        <p style="
               color: white;
               font-size: 18px;
               font-family: 'Courier New', monospace;
-            "
-          >
-            Hey! Im <strong id="cursor1">Munyala Eliud</strong>,
+            ">
+          <br />An insightful strategic leader and Data Engineer with an interest
+          in developing and implementing data-driven solutions to complex
+          business problems with a focus on approaches such as ML-Ops allowing
+          organizations to alleviate issues on their path to AI with ROI by
+          providing a technological backbone for managing their path to data
+          maturity, Machine Learning life cycle through automation and
+          scalability and improving the customer experience to gain an
+          in-depth understanding of organizational objectives.
+        </p>
+
+        <!--Adding footer -->
+        <br />
+        <h2>You can reach out to me for any work,busines or personal relatedinquiries</h2>
+        <address>
+          <a href="mailto:meamunyala@gmail.com" class="icon solid fa-envelope">munyalamea@gmail.com</a><br />
+          <a href="tel:+254793601115">+254793601115</a>
+        </address>
+      </header>
+    </div>
+
+    <div class="wrapper">
+      <div id="main" style="text-align: center">
+        <!-- One skills section -->
+        <section id="one">
+          <br />
+          <h1 id="my_skills" style="border-bottom: 5px solid black; text-align: left">
+            // CORE SKILLS
           </h1>
-          <p
-            style="
-              color: white;
-              font-size: 18px;
-              font-family: 'Courier New', monospace;
-            "
-          >
-            <br />Insightful strategic leader and Data Engineer with an interest
-            in developing and implementing data-driven solutions to complex
-            business problems with a focus on approaches such as ML-Ops allowing
-            organizations to alleviate issues on their path to AI with ROI by
-            providing a technological backbone for managing their path to data
-            maturity, Machine Learning life cycle through automation and
-            scalability and improving the customer experience to gain an
-            in-depth understanding of organizational objectives.
-          </p>
 
-          <!--Adding footer -->
+          <!-- my skills and expertise table -->
+          <div style="overflow-x: auto">
+            <table class="table table-borderless table-light">
+              <thead>
+                <tr id="row_style">
+                  <th scope="col"></th>
+                  <th scope="col">I code In</th>
+                  <th scope="col" style="font-size: smaller">
+                    Frameworks and Libraries
+                  </th>
+                  <th scope="col" style="font-size: smaller">Ninja Tools</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td style="text-align: left; color: #3700b3">Python,R</td>
+                  <td style="text-align: left; color: green">
+                    Django,Flask,Sklearn<br />Tensorflow,Pandas,Numpy,<br />Scrapy
+                  </td>
+                  <td style="text-align: left; color: darkslategray">
+                    Git,Tableau,KoboToolbox
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- end table -->
+          </div>
+
+          <h4>
+            While I have you here,checkout my blog and socials follow me for
+            tips and news on the world of Data Science.
+          </h4>
+
+          <ul class="actions">
+            <!-- <li><a href="#" class="button">#Projects(coming soon)</a></li> -->
+            <li><a href="{% url 'blog' %}" class="button">Blog</a></li>
+            <!-- change to icons -->
+            <li>
+              <a href="https://linkedin.com/in/eliud-munyala" class="icon brands fa-linkedin button"
+                target="_blank"><span class="label">linkedIn</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/meaLuda/munyalaEliud" class="icon brands fab fa-github button"
+                target="_blank"><span class="label">github</span></a>
+            </li>
+          </ul>
           <br />
-          <h2>
-            You can reach out to me for any work,busines or personal related
-            inquiries
-          </h2>
-          <address>
-            <a href="mailto:meamunyala@gmail.com" class="icon solid fa-envelope"
-              >munyalamea@gmail.com</a
-            ><br />
-            <a href="tel:+254793601115">+254793601115</a>
-          </address>
-        </header>
-      </div>
+        </section>
 
-      <div class="wrapper">
-        <div id="main" style="text-align: center">
-          <!-- One skills section -->
-          <section id="one">
+        <section>
+          <h2 style="border-bottom: 5px solid #3700b3">Articles</h2>
+
+          <!-- Main -->
+          <!-- Sample of my blog article -->
+          <!-- Main -->
+          <article class="post">
+            {% for post in post_list %}
+
+            <h2 style="
+                  text-align: left;
+                  color: black;
+                  border-bottom: 1px solid #00b351;
+                ">
+              {{ post.title | upper }}
+            </h2>
+            <a href="{% url 'post_detail' post.slug  %}"><img class="blog-image" src="{{ post.img_post.url }}"
+                alt="" /></a>
+            <h6 style="text-align: right">
+              {{ post.author }} | {{ post.created_on}}
+            </h6>
             <br />
-            <h1
-              id="my_skills"
-              style="border-bottom: 5px solid black; text-align: left"
-            >
-              // CORE SKILLS
-            </h1>
+            <h5 style="text-align: left; color: rgb(74, 73, 73)">
+              {{post.content|slice:":200"|safe}}......
+            </h5>
 
-            <!-- my skills and expertise table -->
-            <div style="overflow-x: auto">
-              <table class="table table-borderless table-light">
-                <thead>
-                  <tr id="row_style">
-                    <th scope="col"></th>
-                    <th scope="col">I code In</th>
-                    <th scope="col" style="font-size: smaller">
-                      Frameworks and Libraries
-                    </th>
-                    <th scope="col" style="font-size: smaller">Ninja Tools</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"></th>
-                    <td style="text-align: left; color: #3700b3">Python,R</td>
-                    <td style="text-align: left; color: green">
-                      Django,Flask,Sklearn<br />Tensorflow,Pandas,Numpy,<br />Scrapy
-                    </td>
-                    <td style="text-align: left; color: darkslategray">
-                      Git,Tableau,KoboToolbox
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- end table -->
-            </div>
-
-            <h4>
-              While I have you here,checkout my blog and socials follow me for
-              tips and news on the world of Data Science.
-            </h4>
-
-            <ul class="actions">
-              <!-- <li><a href="#" class="button">#Projects(coming soon)</a></li> -->
-              <li><a href="{% url 'blog' %}" class="button">Blog</a></li>
-              <!-- change to icons -->
-              <li>
-                <a
-                  href="https://linkedin.com/in/eliud-munyala"
-                  class="icon brands fa-linkedin button"
-                  target="_blank"
-                  ><span class="label">linkedIn</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/meaLuda/munyalaEliud"
-                  class="icon brands fab fa-github button"
-                  target="_blank"
-                  ><span class="label">github</span></a
-                >
-              </li>
-            </ul>
-            <br />
-          </section>
-
-          <section>
-            <h2 style="border-bottom: 5px solid #3700b3">Articles</h2>
-
-            <!-- Main -->
-            <!-- Sample of my blog article -->
-            <!-- Main -->
-            <article class="post">
-              {% for post in post_list %}
-
-              <h2 style="text-align: left; color: black; border-bottom: 1px solid #00b351; ">
-                {{ post.title | upper }}
-              </h2>
-              <a href="{% url 'post_detail' post.slug  %}"
-                ><img class="blog-image" src="{{ post.img_post.url }}" alt=""
-              /></a>
-              <h6 style="text-align: right">
-                {{ post.author }} | {{ post.created_on}}
-              </h6>
-              <br />
-              <h5 style="text-align: left; color: rgb(74, 73, 73)">
-                {{post.content|slice:":200"|safe}}......
-              </h5>
-
-              <footer>
-                <ul class="actions">
-                  <li>
-                    <a href="{% url 'post_detail' post.slug  %}" class="button btn-light"
-                      >Read More &rarr;</a
-                    >
-                  </li>
-                </ul>
-              </footer>
-              {% endfor %}
-            </article>
-          </section>
-          <!--
+            <footer>
+              <ul class="actions">
+                <li>
+                  <a href="{% url 'post_detail' post.slug  %}" class="button btn-light">Read More &rarr;</a>
+                </li>
+              </ul>
+            </footer>
+            {% endfor %}
+          </article>
+        </section>
+        <!--
 				<section id="two">
 					<h2 style="border-bottom: 5px solid black; ">Interesting Projects</h2>
 					<P style="color: brown;">#COMING SOON</P>
 
 				</section> -->
-          <br />
-        </div>
-      </div>
-
-      <div class="wrapper">
-        <footer>
-          <div class="footer" style="text-align: center">
-            <section id="footer">
-              <ul class="icons">
-                <li>
-                  <a
-                    href="https://linkedin.com/in/eliud-munyala"
-                    class="icon brands fa-linkedin"
-                    target="_blank"
-                    ><span class="label">linkedIn</span></a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="https://github.com/meaLuda/munyalaEliud"
-                    class="icon brands fa-github"
-                    target="_blank"
-                    ><span class="label">github</span></a
-                  >
-                </li>
-              </ul>
-            </section>
-          </div>
-        </footer>
-        <!-- personal file -->
-        <script src="{% static 'portfolio/js/jquery.min.js' %}"></script>
-        <script src="{% static 'portfolio/js/jquery.poptrox.min.js' %}"></script>
-        <script src="{% static 'portfolio/js/skel.min.js' %}"></script>
-        <script src="{% static 'portfolio/js/init.js' %}"></script>
+        <br />
       </div>
     </div>
-  </body>
+
+    <div class="wrapper">
+      <footer>
+        <div class="footer" style="text-align: center">
+          <section id="footer">
+            <ul class="icons">
+              <li>
+                <a href="https://linkedin.com/in/eliud-munyala" class="icon brands fa-linkedin" target="_blank"><span
+                    class="label">linkedIn</span></a>
+              </li>
+
+              <li>
+                <a href="https://github.com/meaLuda/munyalaEliud" class="icon brands fa-github" target="_blank"><span
+                    class="label">github</span></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
+      <!-- personal file -->
+      <script src="{% static 'portfolio/js/jquery.min.js' %}"></script>
+      <script src="{% static 'portfolio/js/jquery.poptrox.min.js' %}"></script>
+      <script src="{% static 'portfolio/js/skel.min.js' %}"></script>
+      <script src="{% static 'portfolio/js/init.js' %}"></script>
+    </div>
+  </div>
+</body>
+
 </html>
